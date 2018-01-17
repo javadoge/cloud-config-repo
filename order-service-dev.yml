@@ -4,6 +4,13 @@ spring:
   profiles:
     active: dev
 
+management:
+  security:
+    enabled: false    
+     
+server:
+  port: 9090
+
 hystrix:
   metrics:
     enabled: true
