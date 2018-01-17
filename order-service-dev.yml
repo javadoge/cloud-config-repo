@@ -4,14 +4,6 @@ spring:
   profiles:
     active: dev
 
-eureka:
-  client:
-    service-url:
-     defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka
-  
-server:
-  port: 9090
-
 hystrix:
   metrics:
     enabled: true
@@ -20,4 +12,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 8000
+            timeoutInMilliseconds: 9000
