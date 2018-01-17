@@ -1,3 +1,9 @@
+spring:
+  application:
+    name: order-service
+  profiles:
+    active: dev
+
 eureka:
   client:
     service-url:
